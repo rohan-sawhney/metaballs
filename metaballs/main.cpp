@@ -17,14 +17,14 @@ double x = 0;
 double y = 0;
 double z = -4.0;
 double isovalue = 0.3;
-bool pause = false;
+bool p = false;
 
 Grid grid;
 
 void printInstructions()
 {
     std::cerr << "space: insert metaball\n"
-              << "→/←: increase/ decrease isovalue"
+              << "→/←: increase/ decrease isovalue\n"
               << "↑/↓: move in/out\n"
               << "w/s: move up/down\n"
               << "a/d: move left/right\n"
@@ -75,7 +75,7 @@ void display()
 void timer(int t)
 {
     glutPostRedisplay();
-    if (!pause) {
+    if (!p) {
         glutTimerFunc(t, timer, t);
     }
 }
@@ -101,8 +101,8 @@ void keyboard(unsigned char key, int x0, int y0)
             y -= 0.03;
             break;
         case 'p':
-            pause = !pause;
-            if (!pause) timer(10);
+            p = !p;
+            if (!p) timer(10);
             break;
     }
     
