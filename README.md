@@ -1,6 +1,6 @@
 # Metaballs
 
-Implements the the [Marching Cubes](http://paulbourke.net/geometry/polygonise/) algorithm to generate a triangle mesh that approximates isosurfaces of balls in a box. 
+Implements the the [Marching Cubes](http://paulbourke.net/geometry/polygonise/) algorithm to generates triangle meshes that approximates isosurfaces of balls in a box. 
 
 ![](metaballs.png)
 
