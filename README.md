@@ -1,4 +1,7 @@
 # Metaballs
-Metaballs simulation using Marching Cubes Algorithm.
+
+Implements the the [Marching Cubes](http://paulbourke.net/geometry/polygonise/) algorithm to generate a triangle mesh that approximates isosurfaces of balls in a box. 
+
+![](metaballs.png)
 
 Note: Requires Eigen 3.2.4 and assumes it is in /usr/local/Cellar/eigen/3.2.4/include/eigen3/
